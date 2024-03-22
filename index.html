@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook</title>
+</head>
+<body>
+    <h2>Guestbook</h2>
+    <form action="submit_comment.php" method="post">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="comment">Your Comment:</label><br>
+        <textarea id="comment" name="comment" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <hr>
+    <h3>Comments:</h3>
+    <?php include 'display_comments.php'; ?>
+</body>
+</html>
